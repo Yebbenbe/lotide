@@ -1,12 +1,3 @@
-// assertEqual.js
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const eqArrays = function(arr1, arr2) {
   // checks to make sure both arrays are the same length
   if (arr1.length !== arr2.length) {
@@ -22,8 +13,8 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-const assertArraysEqual = function (arr1, arr2) {
-  // runs eqArrays function. If true, areEqual === true. 
+const assertArraysEqual = function(arr1, arr2) {
+  // runs eqArrays function. If true, areEqual === true.
   const areEqual = eqArrays(arr1, arr2);
   if (areEqual) {
     console.log(`Assertion Passed: [${arr1}] === [${arr2}]`);
@@ -31,26 +22,25 @@ const assertArraysEqual = function (arr1, arr2) {
     console.log(`Assertion Failed: [${arr1}] !== [${arr2}]`);
   }
  
-}
+};
 
-function without(numArray, itemsToRemove) {
+const without = function(numArray, itemsToRemove) {
   const result = [];
   // iterates through the source items, checking if they are found in "items to remove"
-    for (const item of numArray) {
+  for (const item of numArray) {
     let found = false;
     // iterates through itemsToRemove, checking them against each source item
     for (const removeItem of itemsToRemove) {
       if (item === removeItem) {
         found = true; // updates found to true if done
-      }
-      else { // pushes to 'result' otherwise
+      } else { // pushes to 'result' otherwise
         result.push(item);
       }
     }
 
   }
   return result;
-}
+};
 
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"]));
