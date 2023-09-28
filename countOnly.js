@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
 const countOnly = function (allItems, itemsToCount) {
  let results = {}; // results object
 for (item of allItems) {  // for each name in the array
-  if (itemsToCount[item]) { // if itemsToCount evals to TRUE at the key matching current item
+  if (itemsToCount[item]) { // if itemsToCount is TRUTHY at the key matching current item
     //console.log(results[item])
     /*if (results[item]) {   // IF results[item] is TRUTHY (aka has a number)
       results[item] += 1; // add 1 to it's count
