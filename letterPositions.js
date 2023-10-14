@@ -25,12 +25,8 @@ const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
     let letter = sentence[i];
-    //console.log(sentence[i]);  // WORKS
-    // if is space, skip
     if (sentence[i] === " ") {
-    // console.log(i);  // WORKS
-    // this block does nothing
-    // ESLINT is forcing the below curly brackets, idk why
+      // do nothing
     } else if (results[letter]) { // if results contains letter already, push i to array
       results[letter].push(i); // set results at this letter to the array of indexes
     } else {  // if no letter in results
@@ -41,4 +37,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-console.log(letterPositions("my sentencce"));
+console.log(letterPositions("my sentence"));

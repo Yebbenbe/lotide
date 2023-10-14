@@ -21,9 +21,6 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-// Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
-
 /* process
 check that both objects have the same number of keys
 use Object.keys() to create arrays, then compare .length property
@@ -44,9 +41,8 @@ const eqObjects = function(object1, object2) {
           return false;
         }
         // otherwise, continues
-      }
       // if object2 at 'key' doesn't match object1 at 'key'
-      else if (object2[key] !== object1[key]) {
+      } else if (object2[key] !== object1[key]) {
         return false; // returns false
       }
     }
@@ -57,6 +53,7 @@ const eqObjects = function(object1, object2) {
   }
 };
 
+module.exports = eqObjects;
 
 // Test cases
 

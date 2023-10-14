@@ -3,7 +3,7 @@ const middle = function(arr) {
 
   if (length <= 2) {
     // no middle for arrays with one or two elements
-    return []; 
+    return [];
   }
 
   if (length % 2 === 1) {
