@@ -35,9 +35,7 @@ const eqObjects = function(object1, object2) {
 };
 
 module.exports = eqObjects;
-
-// Test cases
-
+/*
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
@@ -55,3 +53,4 @@ assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false); // WORKS
 assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true); // WORKS
 assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false); // WORKS
 assertEqual(eqObjects(shirtObject, multiColorShirtObject), false); //  WORKS
+*/

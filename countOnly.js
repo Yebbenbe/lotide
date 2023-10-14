@@ -20,11 +20,8 @@ const countOnly = function(allItems, itemsToCount) {
 
 
 
-// if (item === itemsToCount[count]) { // if the name === object@key
-// console.log(item, count, itemsToCount[count]);
-//  results[item] ++; // add to results object @ item key
-// }
 
+/*
 // Test code
 const firstNames = [
   "Karl",
@@ -47,3 +44,4 @@ assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
+*/

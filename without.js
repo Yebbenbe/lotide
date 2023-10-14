@@ -42,5 +42,5 @@ const without = function(numArray, itemsToRemove) {
   return result;
 };
 
-const words = ["hello", "world", "lighthouse"];
-console.log(without(words, ["lighthouse"]));
+//const words = ["hello", "world", "lighthouse"];
+//console.log(without(words, ["lighthouse"]));

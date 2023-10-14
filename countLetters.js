@@ -21,4 +21,3 @@ const countLetters = function(sentence) {
   return resultsObj;
 };
 
-console.log(countLetters("abcddfj"));

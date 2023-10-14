@@ -1,9 +1,8 @@
 const assertEqual = require('./assertEqual');
 
-// returns last value of array
+// returns all element of array after the first
 const tail = function(array) {
-  const tailVal = array[array.length - 1];
-  return tailVal;
+  return array.slice(1);
 };
 
 module.exports = tail;

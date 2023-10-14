@@ -1,5 +1,5 @@
 const assertArraysEqual = require('../assertArraysEqual');
-/* I think this is doing the same thing twice..
+// I think this is doing the same thing twice..
 const assert = require('chai').assert;
 describe("#head", () => {
   it("returns equal", () => {
@@ -15,10 +15,11 @@ describe("#head", () => {
     assert.strictEqual(assertArraysEqual(['b', 'c', 'a'], ['b', 'c'])); 
   });
 });
-*/ 
 
-//  test cases
+
+/*/  test cases
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
 assertArraysEqual([6, 8, 1], [11, 8, 6]);
 assertArraysEqual(['a', 'b', 'c'], ['a', 'b', 'c']);
 assertArraysEqual(['b', 'c', 'a'], ['b', 'c']);
+*/
