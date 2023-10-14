@@ -1,4 +1,5 @@
-const eqObjects = require('./eqObjects')
+//const eqObjects = require('./eqObjects')
+const _ = require('../index');
 
 
 // new function assertObjectsEqual.js
@@ -7,7 +8,7 @@ const assertObjectsEqual = function(actual, expected) {
     // imports the 'util' module
     const inspect = require('util').inspect;
     // uses eqObjects function to test if they are equal
-    if (eqObjects(actual, expected) === true) {
+    if (_.eqObjects(actual, expected) === true) {
       // if yes, return string with inspected objects
       return console.log(`Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
     } else {
