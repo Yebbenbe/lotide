@@ -1,9 +1,10 @@
 const assertEqual = require('./assertEqual');
 
-// FUNCTION IMPLEMENTATION
+// returns last value of array
 const tail = function(array) {
-  const newArray = array[array.length - 1];
-  return newArray;
+  const tailVal = array[array.length - 1];
+  return tailVal;
 };
 
 module.exports = tail;
+
