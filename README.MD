@@ -24,6 +24,10 @@ This project was created and published by me as part of my learnings at Lighthou
 
 ## Documentation
 
+For examples of all implemented functions: 
+
+`npm run test`  
+
 The following functions are currently implemented:
 
 * `assertArraysEqual(actual, expected)`: Compares two arrays, gives assertion if equal.
