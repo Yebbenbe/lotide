@@ -1,6 +1,5 @@
-const assertEqual = require('./assertEqual');
+// tail.js should take in an array and return everything except for the first item (head) of the provided array.
 
-// returns all element of array after the first
 const tail = function(array) {
   return array.slice(1);
 };

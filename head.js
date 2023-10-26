@@ -1,10 +1,9 @@
-// assertEqual
+// head.js should take in an array and return the first item in that array.
+
 const assertEqual = require('./assertEqual');
 
-// giveHead
 const head = function(array) {
   return array[0];
 };
 
-// exports the function
 module.exports = head;
