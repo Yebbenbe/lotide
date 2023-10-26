@@ -1,3 +1,5 @@
+// middle.js should take in an array and return the middle-most element(s) of the given array.
+
 const middle = function(arr) {
   const length = arr.length;
 
