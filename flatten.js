@@ -1,28 +1,4 @@
-const eqArrays = function(arr1, arr2) {
-  // checks to make sure both arrays are the same length
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  // iterates through array 1, comparing each element to array 2
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  // If all elements are equal, return true
-  return true;
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  // runs eqArrays function. If true, areEqual === true.
-  const areEqual = eqArrays(arr1, arr2);
-  if (areEqual) {
-    console.log(`Assertion Passed: [${arr1}] === [${arr2}]`);
-  } else {
-    console.log(`Assertion Failed: [${arr1}] !== [${arr2}]`);
-  }
- 
-};
+// flatten.js should take in an array of arrays and return a "flattened" version of the array.
 
 const flatten = function(arr) {
   const result = []; // final array 'result'
@@ -39,3 +15,5 @@ const flatten = function(arr) {
   
   return result;
 };
+
+module.exports = flatten;
