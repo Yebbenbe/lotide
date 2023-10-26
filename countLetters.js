@@ -1,11 +1,4 @@
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// countLetters.js should take in a sentence (as a string) and then return a count of each of the letters in that sentence.
 
 const countLetters = function(sentence) {
   const resultsObj = {};
@@ -18,6 +11,8 @@ const countLetters = function(sentence) {
       resultsObj[letter] = 1;
     }
   }
+  delete resultsObj[" "];
   return resultsObj;
 };
 
+module.exports = countLetters;

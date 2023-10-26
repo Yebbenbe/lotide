@@ -1,8 +1,6 @@
-// const head = require('../head');
-//const assertEqual = require('../assertEqual');
 const _ = require('../index');
-
 const assert = require('chai').assert;
+
 describe("#head", () => {
   it("returns 1 for [1, 2, 3]", () => {
     assert.strictEqual(_.head([1, 2, 3]), 1);
@@ -11,11 +9,3 @@ describe("#head", () => {
     assert.strictEqual(_.head(['5']), '5'); 
   });
 });
-
-
-/* test cases
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head([4,6,7]), 5);
-assertEqual(head(["banan", "Lighthouse", "Labs"]), "Hello");
-*/

@@ -1,12 +1,6 @@
 
-const assertEqual = require('./assertEqual.js');
+const _ = require('./index');
 const eqArrays = require('./eqArrays');
-/* process
-check that both objects have the same number of keys
-use Object.keys() to create arrays, then compare .length property
-check that the value of each key is the same between object 1 and 2
-
-*/
 
 const eqObjects = function(object1, object2) {
   let arr1 = Object.keys(object1);
@@ -35,22 +29,3 @@ const eqObjects = function(object1, object2) {
 };
 
 module.exports = eqObjects;
-/*
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-
-// eqObjects(shirtObject , anotherShirtObject); // => true
-// assertEqual(shirtObject, anotherShirtObject); // fails, can't compare obj
-assertEqual(eqObjects(shirtObject, anotherShirtObject), true); // WORKS
-
-
-// eqObjects(shirtObject , longSleeveShirtObject); // => false
-assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false); // WORKS
-assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true); // WORKS
-assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false); // WORKS
-assertEqual(eqObjects(shirtObject, multiColorShirtObject), false); //  WORKS
-*/

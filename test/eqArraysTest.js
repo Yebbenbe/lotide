@@ -1,8 +1,6 @@
-// const assertEqual = require('../assertEqual');
-// const eqArrays = require('../eqArrays');
 const assert = require('chai').assert;
 const _ = require('../index');
-//console.log(_.eqArrays);
+
 describe("#eqArrays", () => {
   it("returns 'true' if input arrays are equal", () => {
     assert.deepEqual(_.eqArrays([1, 2, 3], [1, 2, 3]), true);
@@ -18,10 +16,3 @@ describe("#eqArrays", () => {
   });
 
 });
-
-/* test cases, assertEqual needs a "true" arg for it's assertion process
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([6, 8, 1], [11, 8, 6]), true);
-assertEqual(eqArrays(['a', 'b', 'c'], ['a', 'b', 'c']), true);
-assertEqual(eqArrays(['b', 'c', 'a'], ['b', 'c']), true);
-*/

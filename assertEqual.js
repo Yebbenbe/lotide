@@ -1,4 +1,5 @@
-// assertEqual.js
+// assertEqual.js should take in two primitive values and console.log an appropriate message to the console.
+
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`Assertion Passed: ${actual} === ${expected}`);
@@ -7,6 +8,5 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// exports the function
 module.exports = assertEqual;
 
