@@ -10,7 +10,7 @@ describe("#without", () => {
     assert.deepEqual(_.without([1, 2, 3], [2]), [1, 3]);
   });
 
-    it('returns [] for ([1], [1])', () => {
+  it('returns [] for ([1], [1])', () => {
     assert.deepEqual(_.without([1], [1]), []);
   });
 

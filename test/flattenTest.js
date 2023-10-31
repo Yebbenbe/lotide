@@ -12,10 +12,10 @@ describe("#flatten", () => {
   });
 
   it("returns [0] for [[0]]", () => {
-    assert.deepEqual(_.flatten([[0]]), [0]); 
+    assert.deepEqual(_.flatten([[0]]), [0]);
   });
 
   it("returns [] for []", () => {
-    assert.deepEqual(_.flatten([]), []); 
+    assert.deepEqual(_.flatten([]), []);
   });
 });

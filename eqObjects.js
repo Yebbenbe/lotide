@@ -2,7 +2,7 @@
 const _ = require('./index');
 const eqArrays = require('./eqArrays');
 
-const eqObjects = function(object1, object2) {
+const eqObjects = function (object1, object2) {
   let arr1 = Object.keys(object1);
   let arr2 = Object.keys(object2);
   // checks to ensure both objects have the same number of keys
@@ -16,7 +16,7 @@ const eqObjects = function(object1, object2) {
           return false;
         }
         // otherwise, continues
-      // if object2 at 'key' doesn't match object1 at 'key'
+        // if object2 at 'key' doesn't match object1 at 'key'
       } else if (object2[key] !== object1[key]) {
         return false; // returns false
       }

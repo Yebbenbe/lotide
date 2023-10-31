@@ -1,6 +1,6 @@
 // eqArrays.js
 
-const eqArrays = function(arr1, arr2) {
+const eqArrays = function (arr1, arr2) {
   // checks to make sure both arrays are the same length
   if (arr1.length !== arr2.length) {
     return false;

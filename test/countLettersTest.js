@@ -7,10 +7,10 @@ describe("#countLetters", () => {
   });
 
   it("returns {3: 1, 2: 2, 1: 3} for '111223'", () => {
-    assert.deepEqual(_.countLetters("111223"), {'3': 1, '2': 2, '1': 3});
+    assert.deepEqual(_.countLetters("111223"), { '3': 1, '2': 2, '1': 3 });
   });
 
   it("returns empty object when passed empty string", () => {
-    assert.deepEqual(_.countLetters(""), {} );
+    assert.deepEqual(_.countLetters(""), {});
   });
 });

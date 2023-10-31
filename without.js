@@ -1,6 +1,6 @@
 // without.js should take in a source array and a itemsToRemove array. It should return a new array with only those elements from source that are not present in the itemsToRemove array.
 
-const without = function(numArray, itemsToRemove) {
+const without = function (numArray, itemsToRemove) {
   const result = [];
   // iterates through the source items, checking if they are found in "items to remove"
   for (const item of numArray) {

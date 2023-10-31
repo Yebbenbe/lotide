@@ -1,8 +1,8 @@
 // flatten.js should take in an array of arrays and return a "flattened" version of the array.
 
-const flatten = function(arr) {
+const flatten = function (arr) {
   const result = []; // final array 'result'
-  
+
   for (let element of arr) { // for each element of the array
     if (Array.isArray(element)) { // if the element is an array,
       for (const subElement of element) { // for each subelement of this array
@@ -12,7 +12,7 @@ const flatten = function(arr) {
       result.push(element); // just push it to 'result'
     }
   }
-  
+
   return result;
 };
 
